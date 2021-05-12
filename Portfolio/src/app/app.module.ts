@@ -11,6 +11,10 @@ import { HomeComponent } from './profile/home/home.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { library} from '@fortawesome/fontawesome-svg-core';
+import { faGithub} from '@fortawesome/free-brands-svg-icons';
+import { ProjectComponent } from './profile/project/project.component';
+import { SkillComponent } from './profile/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     ProfileComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
