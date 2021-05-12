@@ -9,15 +9,27 @@
   }
 }
 
-.social {
+.is-8 {
   margin-left: auto;
   margin-right: auto;
   p {
     text-align: center;
+    margin-top: 10px;
    }
-   a {
-     font-family: $family-cursive;
-     font-size: 20px;
-   }
+  .allLink {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+  }
 }
 
+fa-icon {
+  stroke: $pink;
+  color: $dark;
+  padding: 10px;
+}
+
+a:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
