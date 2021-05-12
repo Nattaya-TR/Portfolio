@@ -1,5 +1,15 @@
 @import "./src/main-style.scss";
 
+.wrapper {
+  height: 100vh;
+  min-height: 800px;
+  overflow-y: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .is-child {
   background-color: $primary-pink;
   p {
@@ -12,10 +22,12 @@
 .is-8 {
   margin-left: auto;
   margin-right: auto;
+
   p {
     text-align: center;
     margin-top: 10px;
-   }
+  }
+
   .allLink {
     display: flex;
     justify-content: space-around;

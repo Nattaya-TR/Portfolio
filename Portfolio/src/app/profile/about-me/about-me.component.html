@@ -1,14 +1,36 @@
 <app-header></app-header>
 <div class="container">
+  <div class="is-ancestor wrapper ">
+    <div class="tile is-parent ">
+      <div class="tile is-child  box is-12">
+        <div class="content parallax">
+          <img src="assets/img/cover.jpg" alt="portrait">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="tile is-ancestor">
     <div class="tile is-parent">
       <article class="tile is-child box">
         <div class="content">
 
-          <p><fa-icon [icon]="name" size="lg"></fa-icon><strong>Name : </strong></p><br>
-          <p><fa-icon [icon]="birthday" size="lg"></fa-icon><strong>Birthday : </strong></p><br>
-          <p><fa-icon [icon]="address" size="lg"></fa-icon><strong>Address : </strong></p><br>
-          <p><fa-icon [icon]="email" size="lg"></fa-icon><strong>Email : </strong></p><br>
+          <p>
+            <fa-icon [icon]="name" size="lg"></fa-icon>
+            <strong>Name : </strong></p>
+          <br>
+          <p>
+            <fa-icon [icon]="birthday" size="lg"></fa-icon>
+            <strong>Birthday : </strong></p>
+          <br>
+          <p>
+            <fa-icon [icon]="address" size="lg"></fa-icon>
+            <strong>Address : </strong></p>
+          <br>
+          <p>
+            <fa-icon [icon]="email" size="lg"></fa-icon>
+            <strong>Email : </strong></p>
+          <br>
         </div>
       </article>
     </div>
@@ -32,16 +54,16 @@
           <p>Check out my social media</p>
         </div>
         <div class="content allLink">
-            <a href="https://github.com/Nattaya-TR">
-              <fa-icon [icon]="faGithub" size="5x"></fa-icon>
-            </a>
-            <a href="https://www.linkedin.com/in/nattaya-trouillard/">
-              <fa-icon [icon]="faLinkedIn" size="5x"></fa-icon>
-            </a>
+          <a href="https://github.com/Nattaya-TR">
+            <fa-icon [icon]="faGithub" size="5x"></fa-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/nattaya-trouillard/">
+            <fa-icon [icon]="faLinkedIn" size="5x"></fa-icon>
+          </a>
 
-            <a href="https://www.flickr.com/photos/natisworld/">
-              <fa-icon [icon]="faFlickr" size="5x"></fa-icon>
-            </a>
+          <a href="https://www.flickr.com/photos/natisworld/">
+            <fa-icon [icon]="faFlickr" size="5x"></fa-icon>
+          </a>
         </div>
       </article>
     </div>
