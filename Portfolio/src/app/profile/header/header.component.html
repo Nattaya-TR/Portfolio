@@ -1,15 +1,11 @@
-<header>
-  <nav class="navbar-divider" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="">
-        <img class="logo" src="{{LogoImage}}">
-      </a>
 
-      <a class="navbar-item"> Home </a>
-      <a class="navbar-item"> About Me </a>
-      <a class="navbar-item"> My project </a>
-      <a class="navbar-item"> My skill </a>
-    </div>
-
-  </nav>
-</header>
+<nav class="navbar" role="navigation" aria-label="main-navigation">
+  <div class="navbar-brand">
+    <a><img class="logo" src="{{LogoImage}}" alt="logo"></a>
+    <a class="navbar-item" routerLink=""> Home </a>
+    <a class="navbar-item" routerLink="/about" > About Me </a>
+    <a class="navbar-item"> My project </a>
+    <a class="navbar-item"> My skill </a>
+  </div>
+</nav>
+<router-outlet></router-outlet>

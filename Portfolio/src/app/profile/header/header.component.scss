@@ -1,9 +1,14 @@
 @import "src/main-style.scss";
 
-header {
+nav {
   font-family: $family-cursive;
   color: $dark;
-  font-size: 20px;
+  font-size: 22px;
+  background: url("../../../assets/img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
 }
 
 .logo {

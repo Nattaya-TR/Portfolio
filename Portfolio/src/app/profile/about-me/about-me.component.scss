@@ -1,1 +1,22 @@
+@import "./src/main-style.scss";
+
+.is-child {
+  background-color: $primary-pink;
+  p {
+    font-family: $family-cursive;
+    font-size: 22px;
+    color: $dark;
+  }
+}
+
+.social {
+  margin-left: auto;
+  margin-right: auto;
+  p {
+    text-align: center;
+   }
+   a {
+     font-family: $family-cursive;
+   }
+}
 

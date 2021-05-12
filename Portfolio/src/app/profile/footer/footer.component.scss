@@ -1,0 +1,15 @@
+@import "src/main-style.scss";
+
+footer {
+  background: url("../../../assets/img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+
+  p {
+    font-family: $family-cursive;
+    color: $dark;
+    font-size: 22px;
+  }
+}
