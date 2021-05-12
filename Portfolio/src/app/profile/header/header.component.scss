@@ -1,0 +1,14 @@
+@import "src/main-style.scss";
+
+header {
+  font-family: $family-cursive;
+  color: $dark;
+  font-size: 20px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+

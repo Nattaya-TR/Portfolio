@@ -8,10 +8,17 @@
 $purple: #a395f5;
 $pink: #fe76c2;
 $blue: #37c7f2;
+$dark: #441f44;
+
+//template
+$primary-light: #f5f2ee;
+$primary-gold: #c38757;
+$primary-pink: rgba(164, 124, 124, 0.5);
+$primary-dark: #8c8c7c;
 
 $light-red: #fff3f3;
 
-$light: rgba(241, 193, 225, 0.8);
+$light: rgba(241, 193, 225, 0.96);
 $green : #1ac977;
 
 // Update Bulma's global variables
@@ -32,5 +39,9 @@ $input-shadow: none;
 
 html, body {
   height: 100%;
-  background-image: url("../src/assets/img/pink-gold.jpg");
+  background: url("../src/assets/img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
 }

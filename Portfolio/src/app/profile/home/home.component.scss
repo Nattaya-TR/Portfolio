@@ -1,5 +1,9 @@
 @import "src/main-style.scss";
 
+.container {
+  top: 0;
+}
+
 .image {
   width: 550px;
   height: 400px;
@@ -11,14 +15,14 @@
 /* text animation */
 .box {
   width: 700px;
-  height: 250px;
+  height: 220px;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  background: $light;
+  background: $primary-pink;
 
   .title {
     width: 100%;
@@ -40,6 +44,7 @@
     h1 {
       font-family: $family-cursive;
       font-size: 36px;
+      color: $dark;
       -webkit-animation: mainFadeIn 2s forwards;
       -o-animation: mainFadeIn 2s forwards;
       animation: mainFadeIn 2s forwards;
@@ -74,7 +79,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      height: 55px;
+      height: 60px;
       margin-top: -10px;
 
       .block {
@@ -90,6 +95,7 @@
       p {
         font-family: $family-cursive;
         font-size: 20px;
+        color: $dark;
         font-weight: 400;
         opacity: 0;
         animation: secFadeIn 2s forwards;
@@ -145,14 +151,14 @@
   0% {
     width: 0;
     height: 0;
-    background: #e9d856;
+    background: $purple;
     border: 0 solid #ddd;
     opacity: 0;
   }
   50% {
     width: 10px;
     height: 10px;
-    background: #e9d856;
+    background: $purple;
     opacity: 1;
     bottom: 45px
   }
@@ -169,9 +175,9 @@
   100% {
     width: 7px;
     height: 7px;
-    background: #e9d856;
+    background: $purple;
     border: 0 solid #222;
-    bottom: 13px;
+    bottom: 10px;
   }
 }
 
@@ -186,11 +192,12 @@
 
 
 .message {
-  background-color: $light;
+  background-color: $primary-pink;
 
   p {
     font-family: $family-cursive;
     font-size: 20px;
+    color: $dark;
   }
 }
 
