@@ -1,0 +1,26 @@
+@import "./src/main-style.scss";
+
+.is-child {
+  background-color: $primary-pink;
+
+  .title {
+    color: $dark;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .subtitle {
+    color: $dark;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  span {
+    color: $dark;
+  }
+}
+
+fa-icon {
+  color: $dark;
+}

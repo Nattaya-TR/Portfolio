@@ -1,1 +1,49 @@
-<p>project works!</p>
+<app-header></app-header>
+<div class="container">
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <figure class="image is-4by3">
+          <img src="assets/img/Rock%20Paper%20Scissor%20screenshot.png" alt="JavaScript game screen shot">
+        </figure>
+        <p class="title">Rock Paper Scissor Spock</p>
+        <p class="subtitle">JavaScript Game</p>
+        <a class="button is-fullwidth is-danger is-light">
+          <fa-icon [icon]="github" size="2x"></fa-icon>
+          <span>GitHub</span>
+        </a>
+      </article>
+    </div>
+
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <figure class="image is-4by3">
+          <img src="assets/img/Pokedex.png" alt="JavaScript game screen shot">
+        </figure>
+        <p class="title">Pokedex</p>
+        <p class="subtitle">HTML, CSS and JavaScript</p>
+        <a class="button is-fullwidth is-danger is-light">
+          <fa-icon [icon]="github" size="2x"></fa-icon>
+          <span>GitHub</span>
+        </a>
+      </article>
+    </div>
+
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <figure class="image is-4by3">
+          <img src="assets/img/Notepad%20-%20Google%20Chrome%204_29_2021%206_27_16%20PM%20(3).png" alt="JavaScript game screen shot">
+        </figure>
+        <p class="title">Note pad</p>
+        <p class="subtitle">Angular</p>
+        <a class="button is-fullwidth is-danger is-light">
+          <fa-icon [icon]="github" size="2x"></fa-icon>
+          <span>GitHub</span>
+        </a>
+      </article>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>

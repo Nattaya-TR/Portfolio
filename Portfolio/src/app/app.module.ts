@@ -8,13 +8,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './profile/header/header.component';
 import { FooterComponent } from './profile/footer/footer.component';
 import { HomeComponent } from './profile/home/home.component';
+import { ProjectComponent } from './profile/project/project.component';
+import { SkillComponent } from './profile/skill/skill.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { library} from '@fortawesome/fontawesome-svg-core';
-import { faGithub} from '@fortawesome/free-brands-svg-icons';
-import { ProjectComponent } from './profile/project/project.component';
-import { SkillComponent } from './profile/skill/skill.component';
+import {NgbCarouselModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
+
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SkillComponent } from './profile/skill/skill.component';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    FontAwesomeModule
+    NgbCarouselModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

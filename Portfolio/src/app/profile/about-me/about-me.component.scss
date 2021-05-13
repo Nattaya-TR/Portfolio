@@ -41,7 +41,11 @@ fa-icon {
   padding: 10px;
 }
 
+a:before {
+  color: $dark;
+}
 a:hover {
   transform: scale(1.2);
   cursor: pointer;
+
 }

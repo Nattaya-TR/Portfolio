@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedin, faFlickr} from '@fortawesome/free-brands-svg-icons';
-import { faSignature, faBirthdayCake, faAddressCard, faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons';
+import { faSignature, faBirthdayCake, faAddressCard, faEnvelopeOpenText, faMobileAlt} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about-me',
@@ -15,6 +15,8 @@ export class AboutMeComponent implements OnInit {
   birthday = faBirthdayCake;
   address = faAddressCard;
   email = faEnvelopeOpenText;
+  phone = faMobileAlt;
+
   constructor() { }
 
   ngOnInit(): void {

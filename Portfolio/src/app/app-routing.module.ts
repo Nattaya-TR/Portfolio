@@ -6,7 +6,7 @@ import {ProjectComponent} from './profile/project/project.component';
 import {SkillComponent} from './profile/skill/skill.component';
 
 const routes: Routes = [
-  {path: '', component: ProfileComponent},
+  {path: '', pathMatch: 'full', component: ProfileComponent},
   {path: 'about', component: AboutMeComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'skill', component: SkillComponent}
