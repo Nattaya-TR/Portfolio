@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, HostListener, Input, OnInit, ViewChild} from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   profileImage = './assets/img/profile-Natta.JPG';
-  constructor() { }
+
+  @Input('ratio') parallaxRatio : number = 1
+  initialTop : number = 0
+
+  @ViewChild('parallax', { static : true }) parallax !: ElementRef;
+
+  @HostListener("window: scroll", ["$event"])
+  onWindowScroll()  {
+    this.parallax.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
+  }
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
