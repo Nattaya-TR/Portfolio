@@ -1,5 +1,8 @@
 @import "./src/main-style.scss";
 
+#parallax {
+  overflow: visible;
+}
 img {
   width: 100%;
   height: 80%;
@@ -17,7 +20,7 @@ img {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  background: #A47C7C7F;
+  background: rgba(164, 124, 124, 0.7);
 
 
   .title {
@@ -39,7 +42,7 @@ img {
 
     h1 {
       font-family: 'itim', cursive;
-      font-size: 36px;
+      font-size: 65px;
       color: #441F44FF;
       -webkit-animation: mainFadeIn 2s forwards;
       -o-animation: mainFadeIn 2s forwards;
@@ -90,7 +93,7 @@ img {
 
       p {
         font-family: 'itim',cursive;
-        font-size: 20px;
+        font-size: 26px;
         color: #441F44FF;
         font-weight: 400;
         opacity: 0;
@@ -188,12 +191,13 @@ img {
 
 
 .message {
-  background-color: #A47C7C7F;
+  background-color: rgba(164, 124, 124, 0.7);
 
   p {
     font-family: "itim",cursive;
-    font-size: 20px;
+    font-size: 22px;
     color: #441F44FF;
+    line-height: 30px;
   }
 }
 

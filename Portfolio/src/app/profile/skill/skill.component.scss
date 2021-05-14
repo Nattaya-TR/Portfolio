@@ -1,0 +1,45 @@
+@import "src/main-style.scss";
+
+.is-small {
+  width : 500px;
+  height: 100px;
+  background-color: $primary-pink;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.threeD {
+  color: $dark;
+  white-space: nowrap;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-family: $family-cursive;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 $pink
+  1px 3px 0 $pink
+  1px 4px 0 $pink
+  1px 5px 0 $pink
+  1px 6px 0 $pink
+  1px 7px 0 $pink
+  1px 8px 0 $pink
+  5px 13px 15px black;
+}
+
+.threeD:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 $purple
+  1px -2px 0 $purple
+  1px -3px 0 $purple
+  1px -4px 0 $purple
+  1px -5px 0 $purple
+  1px -6px 0 $purple
+  1px -7px 0 $purple
+  1px -8px 0 $purple
+  5px -13px 15px black
+  5px -13px 25px $light-red;
+}

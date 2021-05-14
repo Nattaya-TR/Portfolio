@@ -15,6 +15,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { library} from '@fortawesome/fontawesome-svg-core';
 import {NgbCarouselModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { ParallaxDirective } from './parallax.directive';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {NgbCarouselModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
     FooterComponent,
     HomeComponent,
     ProjectComponent,
-    SkillComponent
+    SkillComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,

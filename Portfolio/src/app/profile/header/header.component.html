@@ -7,5 +7,20 @@
     <a class="navbar-item" routerLink="/project"> My project </a>
     <a class="navbar-item" routerLink="/skill"> My skill </a>
   </div>
+
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="button are-small">
+      <a class="button" href="mailto:nattaya.trouille@gmail.com">
+        <fa-icon [icon]="email" size="lg"></fa-icon>
+        <strong>Email Me</strong>
+      </a>
+      <a class="button" href="tel:+32472114366">
+        <fa-icon [icon]="phone" size="lg"></fa-icon>
+        <strong>Call Me</strong>
+      </a>
+      </div>
+    </div>
+  </div>
 </nav>
 <router-outlet></router-outlet>

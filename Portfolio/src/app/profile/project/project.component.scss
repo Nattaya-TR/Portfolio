@@ -1,5 +1,72 @@
 @import "./src/main-style.scss";
 
+/* text-animation*/
+
+.text-animation {
+  min-height: 150px;
+  position: relative;
+  width: 50%;
+  display: flex;
+  background-color: #dcd8dc;
+  justify-content: center;
+  align-items: center;
+  font-family: $family-cursive;
+  margin: 0 auto 25px auto;
+  border-radius: 25px;
+
+
+  h2{
+    font-size: 80px;
+    color: $dark;
+    transform: translateY(-600px);
+    animation: slideIn 1.2s ease-in-out forwards;
+    z-index: 10;
+    opacity: 0;
+    position: relative;
+    font-family: $family-cursive;
+  }
+}
+
+h2:before {
+  content: "";
+  width: 0;
+  height: 23px;
+  background-color: rgba(203, 129, 194, 0.9);
+  position: absolute;
+  bottom: -35px;
+  animation: underline 1s ease-in-out forwards 2s;
+  mix-blend-mode: soft-light;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(203, 161, 161, 0.5);
+  border-radius: 25px;
+  transform: scale(.5);
+  animation: slideIn .5s ease-in-out forwards, skewBg 1s ease-in-out;
+}
+
+@keyframes skewBg {
+  0% { transform: scale(.5) }
+  100% { transform: scale(1) }
+}
+
+@keyframes underline {
+  100% { width: 100% }
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .is-child {
   background-color: $primary-pink;
 
@@ -23,4 +90,9 @@
 
 fa-icon {
   color: $dark;
+}
+
+a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
