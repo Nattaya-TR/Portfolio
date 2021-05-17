@@ -6,40 +6,35 @@
   background-color: $primary-pink;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.threeD {
+.typing {
+  width: 8ch;
   color: $dark;
   white-space: nowrap;
-  position: absolute;
-  top: 45px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 48px;
   font-family: $family-cursive;
-  letter-spacing: 0.1em;
-  transition: 0.3s;
-  text-shadow: 1px 1px 0 $pink
-  1px 3px 0 $pink
-  1px 4px 0 $pink
-  1px 5px 0 $pink
-  1px 6px 0 $pink
-  1px 7px 0 $pink
-  1px 8px 0 $pink
-  5px 13px 15px black;
+  overflow: hidden;
+  border-right: 1px solid;
+  animation: typing 2s steps(8), blink .5s step-end infinite alternate;
+ }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
-.threeD:hover {
-  transition: 0.3s;
-  transform: scale(1.1)translate(-50%, -50%);
-  text-shadow: 1px -1px 0 $purple
-  1px -2px 0 $purple
-  1px -3px 0 $purple
-  1px -4px 0 $purple
-  1px -5px 0 $purple
-  1px -6px 0 $purple
-  1px -7px 0 $purple
-  1px -8px 0 $purple
-  5px -13px 15px black
-  5px -13px 25px $light-red;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+
+}
+
+.section {
+  padding-top: 25px;
 }

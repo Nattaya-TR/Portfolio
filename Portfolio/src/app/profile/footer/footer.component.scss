@@ -13,3 +13,18 @@ footer {
     font-size: 22px;
   }
 }
+
+fa-icon {
+  stroke: $pink;
+  color: $dark;
+  padding: 10px;
+}
+
+a:before {
+  color: $dark;
+}
+a:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+
+}

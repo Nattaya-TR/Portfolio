@@ -9,17 +9,12 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 })
 export class ProjectComponent implements OnInit {
 
+
   github = faGithub;
+  projectVideo = '/assets/img/project.MP4'
 
-  slideActive(ngbSlideEvent: NgbSlideEvent) {
-    console.log(ngbSlideEvent.source);
-    console.log(ngbSlideEvent.paused);
-    console.log(NgbSlideEventSource.INDICATOR);
-    console.log(NgbSlideEventSource.ARROW_LEFT);
-    console.log(NgbSlideEventSource.ARROW_RIGHT)
-  }
+  constructor() {}
 
-  constructor() { }
 
   ngOnInit(): void {
   }
