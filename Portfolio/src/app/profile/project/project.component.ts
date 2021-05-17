@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbSlideEvent, NgbSlideEventSource } from "@ng-bootstrap/ng-bootstrap";
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -9,9 +8,7 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 })
 export class ProjectComponent implements OnInit {
 
-
   github = faGithub;
-  projectVideo = '/assets/img/project.MP4'
 
   constructor() {}
 

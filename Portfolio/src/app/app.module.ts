@@ -16,6 +16,10 @@ import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { library} from '@fortawesome/fontawesome-svg-core';
 import {NgbCarouselModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { ParallaxDirective } from './parallax.directive';
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
+import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 
 
 @NgModule({
@@ -36,6 +40,10 @@ import { ParallaxDirective } from './parallax.directive';
     NoopAnimationsModule,
     NgbCarouselModule,
     FontAwesomeModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

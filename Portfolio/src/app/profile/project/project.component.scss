@@ -67,8 +67,13 @@ h2:before {
     opacity: 1;
   }
 }
+
+.container {
+  padding-top: 25px;
+}
 .is-child {
   background-color: $primary-pink;
+
 
   .title {
     color: $dark;
