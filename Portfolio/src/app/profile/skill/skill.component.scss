@@ -1,6 +1,6 @@
 @import "src/main-style.scss";
 
-.is-small {
+.typing-wrapper {
   width : 500px;
   height: 100px;
   background-color: $primary-pink;
@@ -16,6 +16,8 @@
   color: $dark;
   white-space: nowrap;
   font-size: 48px;
+  height: 50px;
+  margin-top: 25px;
   font-family: $family-cursive;
   overflow: hidden;
   border-right: 1px solid;
@@ -35,6 +37,41 @@
 
 }
 
-.section {
+.container {
   padding-top: 25px;
+}
+
+.is-small {
+  background-color: $primary-pink;
+}
+
+.lang {
+  padding: 35px;
+  background-color: $primary-pink;
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(253, 80, 122, 0.79);
+    font-style: italic;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+
+mat-progress-bar {
+  height: 15px;
+}
+h2,h4 {
+  font-family: $family-cursive;
+}
+.extra {
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+  }
+  h4 {
+    font-size: 20px;
+  }
 }

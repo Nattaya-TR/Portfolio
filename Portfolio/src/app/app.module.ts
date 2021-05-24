@@ -14,12 +14,13 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { library} from '@fortawesome/fontawesome-svg-core';
-import {NgbCarouselModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ParallaxDirective } from './parallax.directive';
 import {VgCoreModule} from '@videogular/ngx-videogular/core';
 import {VgControlsModule} from '@videogular/ngx-videogular/controls';
 import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
